@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> myfoodweb</title>
+    <link rel="stylesheet"  href="css/stylecss.css">
+    <link rel="stylesheet"  href="css/mediacss.css" media="screen and (max-width: 802px)">
+</head>
+<body style="background: none;" >
+    <header class="head">
+        <nav class="navig">
+        
+            <ul>
+                <li>
+                    <a href="#" class="links">home</a>
+                </li>
+                <li>
+                    <a href="#"class="links">contact us</a>
+                </li>
+                <li>
+                    <a href="#"class="links">about us</a>
+                </li>
+            </ul>
+            <button id="dark">dark theme</button>
+        </nav>
+    <div class="welcome">
+        <h2 class="welcome-head">
+            Welcome To Our Myfoodweb.com
+        </h2>
+        <p class="welcometext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta eaque est molestiae error sequi reiciendis? Labore quibusdam, magni maiores odit nesciunt iure tempore, excepturi veritatis in dignissimos dolore cum, itaque quae!</p>
+
+    </div>
+    </header>
+    <section class="section">
+        <h2>OUR SERVICES</h2>
+        <div class="services">
+        <div class="boxservice dark" id="box1">
+            <img src="images/foodctaering.png" alt="" class="serimage">
+            <h2 class="servicehead">catering</h2>
+            
+            <div class="servdiv"><p class="servicepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora aperiam porro autem modi, minima neque maxime qui, repellat similique, blanditiis amet harum dignissimos sed laudantium provident. Aliquam accusamus magni iste necessitatibus?
+            
+        </div>
+        </div>
+        <div class="boxservice dark" id="box2">
+            <img src="images/foodbulk.png" alt="" class="serimage">
+            <h2 class="servicehead">bulk order</h2>
+            <div class="servdiv"><p class="servicepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora aperiam porro autem modi, minima neque maxime qui, repellat similique, blanditiis amet harum dignissimos sed laudantium provident. Aliquam accusamus magni iste necessitatibus?
+            </p>
+        </div>
+    </div>
+    <div class="boxservice dark" id="box3">
+        <img src="images/fooddilivery.png" alt="" class="serimage">
+        <h2 class="servicehead">delivery</h2>
+        <div class="servdiv">
+            <p class="servicepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora aperiam porro autem modi, minima neque maxime qui, repellat similique, blanditiis amet harum dignissimos sed laudantium provident. Aliquam accusamus magni iste necessitatibus?
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+    <div class="formcontainer">
+        <h2 class="contact">Contact Us!</h2>
+        <div class="phoneimage">
+
+        </div>
+        <!-- <div class="divofform"> -->
+            <form action="#" class="forms">
+                <label class="formlabel" for="name">name</label>
+                <input class="forminput" type="text" placeholder="enter name" id="name">
+                <label class="formlabel" for="email">email</label>
+                <input class="forminput" type="email" placeholder="enter email" id="email">
+                <label class="formlabel" for="phone">phone</label>
+                <input class="forminput" type="number" placeholder="enter phone number" id="phone">
+                <label class="formlabel" for="address">enter address</label>
+                
+                <textarea id="address" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        <!-- </div> -->
+    </div>
+    <section class="secclient">
+        <!-- <div class="headclient"> -->
+            <h2 class="headclient">our clients</h2>
+        <div class="clientimage">
+            <div class="divclient">
+            <img src="images/dominos.png" alt="" class="imagesec">
+        </div>
+        <div class="divclient">
+            <img src="images/macdonalds.png" alt="" class="imagesec">
+        </div>
+        <div class="divclient">
+            <img src="images/mastercheff.png" alt="" class="imagesec">
+        </div>
+        <div class="divclient">
+            <img src="images/macdonalds.png" alt="" class="imagesec">
+        </div>
+    </div>
+        
+    </section>
+    <footer>
+        <h2>&copy all right reserved to myfoodweb</h2>
+    </footer>
+    <script>
+        let dark=document.getElementById("dark");
+        let box=document.getElementsByClassName("dark");
+        let boxarr=Array.from(box);
+        console.log(boxarr)
+        let body=document.getElementsByTagName("body")[0]
+        dark.addEventListener("click",()=>{
+            boxarr.forEach(el => {
+                el.classList.toggle("boxservice-dark")
+            });
+            if(body.style.background=="none"){
+            body.style.background="#333333";
+            
+            
+        }
+        else{
+            body.style.background="none";
+            
+
+        }
+        })
+        var x = window.matchMedia("screen and (max-width: 802px)")
+        console.log(x)
+        if(x.matches){
+            // dark.remove();
+            console.log(x.matches)
+        }else{
+            console.log("hwy")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+.welcome{
+    width: 68%;
+    font-size: 15px;
+}
+.boxservice{
+    width: 100%;
+    flex-direction: column;
+}
+.section h2 {
+    margin: 27px;
+}
+.forms{
+    margin: 4px auto;
+    top: -16rem;
+    width: 74%;
+    height: 59%;
+}
+.contact{
+    margin: 4px auto;
+}
+.phoneimage{
+    background-image: none;
+    /* margin: 4px auto; */
+}
+.boxservice{
+    height: 32rem;
+
+}
+.formcontainer{
+    overflow: hidden;
+}
+.imagesec {
+    height: 7rem;
+    width: 7rem;
+    margin: 2px;
+}
+.headclient {
+    font-size: 51px;}
+.links{
+    font-size: 19px;
+}
+footer h2 {
+    font-size: 16px;
+}

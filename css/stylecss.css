@@ -1,0 +1,324 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.dark{
+    
+}
+
+/* header */
+header{
+    height: 30rem;
+    width: 100%;
+    
+    
+    
+}
+/* navigation */
+nav::after{
+    background:   linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),url("../images/foodhead.jpg") no-repeat center center/cover ;
+    
+    content: "";
+    position:absolute;
+    height: 28rem ;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+nav{
+    background-color: rgb(115 102 123 / 83%);
+
+} 
+ul{
+    display: flex;
+    /* width: 300px; */
+    
+    font-size: 18px;
+    justify-content:center;
+}
+#dark{
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 94%;
+    height: 2.5rem;
+    top: 0px;
+
+}
+.navig ul li{
+    position: sticky;
+    margin: 6px;
+    
+    list-style: none;
+}
+.links{
+    text-decoration: none;
+    color: rgb(221, 221, 223);
+    font-size: 25px;
+    padding: 7px;
+    
+}
+.links:hover{
+    background-color: azure;
+    color: #8989ae;
+    text-decoration: underline;
+    padding: 9px;
+    
+}
+/* /header */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    
+    height: 22rem;
+    width: 68%;
+    margin: 37px auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    color: whitesmoke
+
+}
+/* section */
+.section h2{
+    
+    text-align: center;
+    font-size: 35px;
+    padding: 4px;
+    color: #8989ae;
+    margin-top: 54px;
+}
+/* services */
+.services{
+    /* height: 22rem;
+    width: 800px; */
+    
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.boxservice{
+    display: flex;
+    flex-wrap: wrap;
+    height: 26rem;
+    width: 23rem;
+    border-radius: 13px;
+    border: 1px solid rgb(220, 215, 215);
+    margin: 8px;
+    justify-content: center;
+    background-color: azure;
+    
+}
+.boxservice-dark{
+    display: flex;
+    flex-wrap: wrap;
+    height: 26rem;
+    width: 23rem;
+    border-radius: 13px;
+    border: 1px solid rgb(95, 95, 95);
+    margin: 8px;
+    justify-content: center;
+    background-color: rgb(65, 64, 64);
+    
+}
+.servdiv{
+    
+    margin: 9px;
+}
+.servicepara{
+   
+    text-align:center;
+    font-size: 19px;
+    
+}
+#box1{
+    /* background: url("images/foodctaering.png") no-repeat top  ; */
+    /* background-size: contain; */
+}
+.serimage{
+    position: relative;
+    height: 9rem;
+    width: 16rem;
+    margin: 2px auto;
+}
+/* contact form */
+.phoneimage{
+    position: relative;
+    width: 20%;
+    height: 22rem;
+    border-radius: 13px;
+    top: 6rem;
+    margin: 4px 29%;
+    background: url("../images/foodform.jpg")no-repeat center center/cover;
+    z-index: -1;
+}
+ .formcontainer{
+ /* border: 2px solid red; */
+ padding: 0px;
+ margin: 0px;
+ height: 35rem;
+} 
+.divofform{
+    background-color: rgb(246, 162, 60);
+    height: 329px;
+    width: 374px;
+    text-align: center; }
+.contact{
+    position: relative;
+    top: 6rem;
+    margin: 2px 31%;
+    display: block;
+    width: 200px;
+    font-size: 34px;
+    color: #88b3ff;
+}
+.forms{
+    position: relative;
+    
+    border-radius: 15px;
+    margin-top: 14px;;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 22rem;
+    text-align: center;
+    font-size: 18px;
+    top: -20rem;
+    margin: 4px 43%; 
+    justify-content: center;
+    background-color: rgb(232 199 226 / 67%);
+    box-shadow: -5px 5px 4px rgba(129, 129, 247, 0.589);
+    transition: 0.8s;
+
+   
+}
+.forms:hover{
+    transform:translate(14px,-14px) ;
+    transform: scale(1.5);
+}
+input{
+    
+    width: 80%;
+    margin: 4px auto;
+    padding: 4px;
+    border-radius: 14px;
+    font-size: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+
+input:hover{
+    box-shadow: 0px 0px 14px rgb(105, 103, 103);
+}
+textarea{
+    width: 80%;
+    height: 67px;
+    margin: 5px auto;
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 13px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+textarea:hover{
+    box-shadow: 0px 0px 14px rgb(105, 103, 103);
+}
+.secclient{
+    background:   linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),url("../images/client.jpg") no-repeat center center/cover ;
+    height: 24rem;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+    /* border: 5px solid red; */
+
+
+    
+    
+    /* border: 2px solid blue; */
+}
+.clientimage{
+    /* border: 2px solid blue; */
+    margin: 4px;
+    padding: 9px;
+    height: 18rem;
+    width: 92%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    /* margin-top: 5rem; */
+
+}
+.imagesec{
+    height: 10rem;
+    width:8rem;
+    /* margin: 2px auto; */
+    border: 1px solid rgba(250, 249, 249, 0.861);
+    margin: 4px auto;
+    background-color: #ffffff7c;
+    border-radius: 24px;
+    padding: 4px;
+}
+.headclient{
+    font-size: 63px;
+    color: #88b3ff;
+    text-align: center;
+    text-decoration: underline;
+}
+footer{
+background-color: black;
+text-align: center;
+width: 100%;
+color: azure;
+display: flex;
+}
+footer h2{
+
+    font-size: 33px;
+}
+/* social media */
+.social_media {
+    /* height: 7.02rem; */
+    display: flex;
+    /* border: 1px solid red; */
+    /* width: 56%; */
+    /* text-align: center; */
+    /* margin-left: 32rem; */
+    position: absolute;
+    right: 0px;
+}
+.social_media a{
+    font-size: 26px;
+    /* margin: 8px; */
+    text-decoration: none;
+    border: none;
+    padding: 5px 10px;
+    /* border-radius: 100%; */
+    color: cornflowerblue;
+    /* background-color: whitesmoke; */
+    /* box-shadow: 0px 0px 2px #989090; */
+    /* transition: all 0.5s;*/
+}
+.social_media a:hover {
+    /* padding: 22px; */
+    /* font-size: 42px; */
+    box-shadow: 0px 0px 15px #989090;
+    
+    
+}
+.icon{
+    height: 1rem;
+}
